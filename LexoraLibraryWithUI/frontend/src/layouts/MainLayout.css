@@ -1,0 +1,13 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1.5rem; /* Add some padding around the content */
+  /* You might want to set a max-width and center content for larger screens */
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */ 
+} 

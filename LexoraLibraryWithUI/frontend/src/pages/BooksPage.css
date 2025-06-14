@@ -1,0 +1,179 @@
+/* frontend/src/pages/BooksPage.css */
+.books-page-container {
+  padding: 20px; /* Keep padding as defined in MainLayout.css for content */
+  /* font-family: Arial, sans-serif; */ /* Remove to inherit global/browser default */
+  max-width: 1200px;
+  margin: 20px auto; /* Add some top/bottom margin */
+}
+
+.books-page-container h2 {
+  color: #333;
+  margin-bottom: 25px; /* Slightly more margin */
+  text-align: center;
+  font-size: 2rem; /* Consistent with other page titles */
+}
+
+.add-book-button-container {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.books-page-container .add-book-button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 18px; /* Slightly larger padding */
+  border: none;
+  border-radius: 5px; /* Slightly more rounded */
+  cursor: pointer;
+  font-size: 1rem; /* Ensure consistent font size */
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.books-page-container .add-book-button:hover {
+  background-color: #218838;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly softer shadow */
+}
+
+.books-table th,
+.books-table td {
+  border: 1px solid #e0e0e0; /* Lighter border */
+  padding: 14px 16px; /* Increased padding */
+  text-align: left;
+  vertical-align: middle;
+}
+
+.books-table th {
+  background-color: #f7f9fc; /* Lighter, cooler header */
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.books-table tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.books-table tbody tr:hover {
+  background-color: #f1f5f8;
+}
+
+.books-table .actions-cell {
+    text-align: center;
+}
+
+.books-table .actions-cell button {
+  color: white;
+  padding: 7px 12px; /* Adjusted padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem; /* Slightly smaller for table actions */
+  margin-right: 8px;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.books-table .actions-cell button:last-child {
+  margin-right: 0;
+}
+
+.books-table .actions-cell button:hover {
+    transform: translateY(-1px);
+}
+
+.books-table .actions-cell .edit-button {
+  background-color: #ffc107; 
+  color: #212529;
+}
+.books-table .actions-cell .edit-button:hover {
+  background-color: #e0a800;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.books-table .actions-cell .delete-button {
+  background-color: #dc3545; 
+}
+.books-table .actions-cell .delete-button:hover {
+  background-color: #c82333;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.pagination-controls {
+  margin-top: 30px; /* More space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-controls button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px; /* Consistent padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 0 8px; /* More margin */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #0056b3;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.pagination-controls button:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.pagination-controls span {
+  margin: 0 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.no-books-message {
+    text-align: center;
+    margin-top: 40px; /* More margin */
+    font-style: italic;
+    color: #6c757d; /* Softer color */
+    font-size: 1.1rem;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* For inline error/loading messages */
+.fetch-error-inline {
+  color: #721c24; /* Darker red */
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 15px 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.loading-inline {
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  color: #004085;
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  border-radius: 4px;
+  font-size: 0.95rem;
+} 

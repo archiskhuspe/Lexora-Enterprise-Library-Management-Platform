@@ -1,0 +1,108 @@
+.homepage-container {
+  padding: 1rem; /* Padding is handled by MainLayout, this can be minimal or specific */
+  text-align: center;
+}
+
+.homepage-header {
+  background-color: #007bff; /* Primary blue, or your app's theme color */
+  color: white;
+  padding: 3rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+.homepage-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.homepage-header p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+.homepage-actions {
+  margin-bottom: 2.5rem;
+}
+
+.homepage-actions h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.action-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Spacing between cards */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.action-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px; /* Max width for each card */
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.action-card h3 {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.action-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Styles for the placeholder featured books section (if you uncomment it) */
+.featured-books h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.featured-books-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.featured-book-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.featured-book-item h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.featured-book-item p {
+  font-size: 0.9rem;
+  color: #666;
+} 

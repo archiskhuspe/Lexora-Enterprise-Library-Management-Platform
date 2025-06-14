@@ -1,0 +1,119 @@
+/* frontend/src/components/EditBookModal.css */
+.edit-book-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-book-modal-content {
+  background-color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  max-width: 500px;
+  z-index: 1001;
+  animation: fadeInModal 0.3s ease-out; /* Re-use fadeInModal if defined globally or define here */
+}
+
+/* If @keyframes fadeInModal is not global, define it here too */
+/* @keyframes fadeInModal { ... } */
+
+.edit-book-modal-content h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  color: #333;
+  font-size: 1.7rem;
+}
+
+.edit-book-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.edit-book-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.edit-book-form .form-group input[type="text"],
+.edit-book-form .form-group input[type="date"] {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.edit-book-form .form-group input[type="text"]:focus,
+.edit-book-form .form-group input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.2);
+}
+
+.edit-book-form .modal-error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.edit-book-form .form-actions {
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.edit-book-form .form-actions button {
+  padding: 0.65rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.edit-book-form .form-actions button[type="submit"] {
+  background-color: #007bff; /* Blue for update/save */
+  color: white;
+}
+
+.edit-book-form .form-actions button[type="submit"]:hover {
+  background-color: #0056b3;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.edit-book-form .form-actions button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.edit-book-form .form-actions button[type="button"]:hover {
+  background-color: #5a6268;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.edit-book-form .form-actions button:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+  box-shadow: none;
+} 
