@@ -1,4 +1,4 @@
-# Lexora-Enterprise-Library-Management-Platform
+# Lexora: An Enterprise Library Management Platform
 
 A Spring Boot-based Library Management System that provides REST APIs for managing library resources including books, members, and loans.
 
